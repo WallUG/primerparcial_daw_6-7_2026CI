@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UG Mi Página</title>
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="Titulo">Universidad de Guayaquil <span>  Website </span> </h1>
+        <p class="subtitle">Facultad de Ciencias, Matemáticas y Física</p>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="Grupos_UG.html">Grupos UG</a>
+          <a href="Misterio.html">Misterio</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card" id="about">
+        <h2>Acerca de mí</h2>
+        <p>¡Hola! Bienvenido a mi página web.</p>
+        <p>Josue Chichanda ALIAS Rafael Correa</p>
+      </section>
+
+      <section class="card">
+        <h2>Mis intereses</h2>
+        <img src="public/chichanda.jpeg" alt="Foto de Josue Chichanda" />
+        <p>Me interesa la programación, el desarrollo web y la inteligencia artificial.</p>
+        <p>Tecnologías que me gustan: JavaScript, Python, HTML y CSS.</p>
+        <p>También sigo criptomonedas como bitcoin, ethereum y dogecoin.</p>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>Contacto</h2>
+        <p>Correo: josue.chichanda@ug.edu.ec</p>
+        <p>Teléfono: +593 99 999 9999</p>
+        <form>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Enviar</button>
+      </section>
+    </main>
+
+    <script>
+      console.log("¡Hola desde JavaScript!");
+      alert("¡Bienvenido a mi página web!");
+    </script>
+  </body>
+</html>
