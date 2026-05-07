@@ -1,58 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UG Mi Página</title>
-    <link rel="preload" href="css/styles.css" as="style" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1 class="Titulo">Universidad de Guayaquil <span>  Website UG</span> </h1>
-        <p class="subtitle">Facultad de Ciencias, Matemáticas y Física</p>
-        <nav>
-          <a href="index.html">Inicio</a>
-          <a href="Grupos_UG.html">Grupos UG</a>
-          <a href="Misterio.html">Misterio</a>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Página Web — Tarea HTML</title>
+  <link rel="preload" href="css/normalize.css" as="style" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="preload" href="css/styles.css" as="style" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1 class="h1">Bienvenido a <span class="titulo_span">Mi Página Web BY Gustavo Garcia Gomez</span></h1>
+    <p class="texto">Página web desarrollada con HTML y CSS, como parte de la Unidad 1 y 2 — Desarrollo Web.</p>
+  </header>
+
+  <!-- NAVEGACIÓN -->
+  <nav>
+    <ul class="nav-bg navegacion-principal">
+        <!-- Enlaces de navegación con # ya que no esta construido -->
+      <li class="contenedor"><a class="enlace" href="#sobre-mi">Sobre mí</a></li>
+      <li class="contenedor"><a class="enlace" href="#galeria">Galería</a></li>
+      <li class="contenedor"><a class="enlace"  href="#habilidades">Habilidades</a></li>
+      <li class="contenedor"><a class="enlace" href="#horario">Horario</a></li>
+      <li class="contenedor"><a class="enlace" href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- SECCIÓN: TEXTO -->
+    <section id="sobre-mi">
+      <h2 class="h2">Sobre mí <img src="ico/usuario.svg" alt="Icono de sobre mí" class="icono_usuario" /> </h2>
+      <p class="texto">
+        Soy Gustavo Garcia un estudiante de la carrera de Desarrollo de Software, al cual le gusta la tecnología 
+        y el diseño web. Esta página fue creada como ejercicio práctico para aplicar los 
+        fundamentos del lenguaje HTML.
+      </p>
+      <div class="sombreado">
+        <figure class="figura">
+          <img src="img/Grupo.jpeg" alt="Foto grupal" />
+          <figcaption>Los mejores compañeros de clase</figcaption>
+        </figure>
       </div>
-    </header>
+      <!-- uso de <code>&lt; para representar mayor y menor que -->
+      <p class="texto">
+        Todo el html esta estructurado de forma correcta con el uso de las etiquetas que emos visto en clases, como <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, 
+        <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code> y <code>&lt;footer&gt;</code>.
+      </p>
+      <p class="texto">
+        Mi objetivo es seguir emplear lo aprendido de html para construir 
+        web completas y accesibles.
+      </p>
+    </section>
 
-    <main class="container">
-      <section class="card" id="about">
-        <h2>Acerca de mí</h2>
-        <p>¡Hola! Bienvenido a mi página web.</p>
-        <p>Josue Chichanda ALIAS Rafael Correa</p>
-      </section>
+    <!-- SECCIÓN: IMÁGENES -->
+    <section id="galeria">
+      <h2 class="h2">Galería de fotos <img src="ico/galeria.svg" alt="Icono de galería" class="icono_galeria" /> </h2>
+      <div class="contenedor">
+        <figure class="figura_img">
+          <img src="img/mi_imagen.jpg" alt="Mi Foto" />
+          <figcaption>Mi Foto</figcaption>
+        </figure>
+      </div>
+    </section>
 
-      <section class="card">
-        <h2>Mis intereses</h2>
-        <img src="public/chichanda.jpeg" alt="Foto de Josue Chichanda" />
-        <p>Me interesa la programación, el desarrollo web y la inteligencia artificial.</p>
-        <p>Tecnologías que me gustan: JavaScript, Python, HTML y CSS.</p>
-        <p>También sigo criptomonedas como bitcoin, ethereum y dogecoin.</p>
-      </section>
+    <!-- SECCIÓN: LISTAS -->
+    <section id="habilidades">
+      <h2 class="h2">Habilidades y herramientas <img src="ico/herramientas.svg" alt="Icono de herramientas" class="icono_herramientas" /> </h2>
+      <div>
+        <div>
+          <h3 class="h3">Herramientas que uso</h3>
+          <ul class="lista">
+            <p>Visual Studio Code</p>
+            <p>Android Studio</p>
+            <p>Google Chrome (DevTools)</p>
+            <p>Git &amp; GitHub</p>
+            <p>Figma (diseño básico)</p>
+            <p>Notepad++</p>
+          </ul>
+        </div>
+        <div>
+          <h3 class="h3">Pasos para crear una página</h3>
+          <ol class="lista_ordenada">
+            <li>Definir el propósito del sitio</li>
+            <li>Estructurar el HTML semántico</li>
+            <li>Agregar estilos con CSS</li>
+            <li>Añadir interactividad con JS</li>
+            <li>Probar en el navegador</li>
+            <li>Publicar el proyecto</li>
+          </ol>
+        </div>
+      </div>
+    </section>
 
-      <section class="card" id="contact">
-        <h2>Contacto</h2>
-        <p>Correo: josue.chichanda@ug.edu.ec</p>
-        <p>Teléfono: +593 99 999 9999</p>
-        <form>
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Enviar</button>
-      </section>
-    </main>
+    <!-- SECCIÓN: TABLA -->
+    <section id="horario">
+      <h2 class="h2">Horario de clases <img src="ico/horario.svg" alt="Icono de horario" class="icono_horario" /> </h2>
+      <table class="tabla_horario">
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Materia</th>
+            <th>Hora</th>
+            <th>Aula</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>Base de datos avanzado</td>
+            <td>14:00 - 15:00</td>
+            <td>Virtual</td>
+          </tr>
+          <tr>
+            <td>Martes</td>
+            <td>Ingles III</td>
+            <td>12:00 - 14:00</td>
+            <td>Virtual</td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td>Desarrollo de aplicaciones web</td>
+            <td>18:00 - 21:00</td>
+            <td>Virtual</td>
+          </tr>
+          <tr>
+            <td>Jueves</td>
+            <td>Desarrollo de aplicaciones web</td>
+            <td>18:00 - 20:00</td>
+            <td>Virtual</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>Inglés III</td>
+            <td>12:00 - 14:00</td>
+            <td>Virtual</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-    <script>
-      console.log("¡Hola desde JavaScript!");
-      alert("¡Bienvenido a mi página web!");
-    </script>
-  </body>
+    <!--SECCIÓN: PROYECTOS-->
+    <section id="proyectos">
+      <h2 class="h2">Proyectos</h2>
+      <div class="proyectos-carrusel">
+        <figure class="proyecto-card">
+          <img src="img/proyecto1.png" alt="Sistema de Prácticas (PPP)" />
+          <figcaption>
+            <h3>Sistema de Prácticas (PPP)</h3>
+            <p>Desarrollo de una página web responsiva con diseño moderno y navegación clara.</p>
+          </figcaption>
+        </figure>
+        <figure class="proyecto-card">
+          <img src="img/proyecto2.png" alt="Aplicación de seguridad" />
+          <figcaption>
+            <h3>Aplicación de seguridad</h3>
+            <p>Creación de una app interactiva para seguridad y proteccion para android.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: FORMULARIO -->
+    <section id="contacto">
+      <h2 class="h2">Formulario de contacto</h2>
+      <form class="formulario" action="#" method="post">
+        <div class="row">
+          <label>
+            Nombre completo
+            <input type="text" name="nombre" placeholder="Ej: Gustavo Garcia" required />
+          </label>
+        </div>
+        <div class="row">
+          <label>
+            Correo electrónico
+            <input type="email" name="correo" placeholder="Ej: correo@ejemplo.com" required />
+          </label>
+        </div>
+        <div class="row">
+          <label>
+            Mensaje
+            <textarea name="mensaje" placeholder="Mensaje aquí..." required></textarea>
+        </label>
+        </div>
+        <button class="boton" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p class="texto">Página web creada con <span>HTML5</span> · Tarea Unidad 2 Gustavo Garcia — Desarrollo Web &copy; 2025</p>
+  </footer>
+
+</body>
 </html>
